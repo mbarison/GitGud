@@ -1,0 +1,22 @@
+PAGE = 21.6, 27.9, PORTRAIT, HV
+
+FONT = Alegreya Sans Medium, 18, BT, #000000
+
+RECTANGLE = 1-12, 45%, 0%, 10%, 100%, #000000
+CIRCLE = 1-12, 30%, 30%, 40%, 40%, #000000
+CIRCLE = 1-12, 35%, 35%, 30%, 30%, #FFFFFF
+
+TEXT = 1-4, "commit", 5%, 5%, 10%, 90%, center, top, 270
+TEXT = 1-4, "commit", 85%, 5%, 10%, 90%, center, bottom, 90
+
+TEXT = 5-8, "test", 5%, 5%, 10%, 90%, center, top, 270
+TEXT = 5-8, "test", 85%, 5%, 10%, 90%, center, bottom, 90
+
+TEXT = 9-12, "release", 5%, 5%, 10%, 90%, center, top, 270
+TEXT = 9-12, "release", 85%, 5%, 10%, 90%, center, bottom, 90
+
+TEXT = 13-16, "merge", 5%, 5%, 90%, 10%, center, top
+TEXT = 13-16, "merge", 5%, 85%, 90%, 10%, center, top, 180
+
+TEXT = 17-20, "branch", 5%, 5%, 90%, 10%, center, top
+TEXT = 17-20, "branch", 5%, 85%, 90%, 10%, center, top, 180
