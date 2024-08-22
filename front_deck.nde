@@ -5,34 +5,49 @@ FONT = Alegreya Sans Medium, 18, BT, #000000
 ICON = , A, check.png
 ICON = , B, star.png
 
-RECTANGLE = 1-12, 45%, 0%, 10%, 100%, #444444
-CIRCLE = 1-12, 30%, 30%, 40%, 40%, #444444
+[commit] = 1-32
+[test] = 33-37
+[release] = 38-42
+[merge] = 43-47
+[branch] = 48-52
+[dev] = 53-54
+[prod] = 55-56
 
-CIRCLE = 1-4, 35%, 35%, 30%, 30%, #FFFFFF
-CIRCLE = 5-8, 35%, 35%, 30%, 30%, #228B22
-CIRCLE = 9-12, 35%, 35%, 30%, 30%, #FFD700
+RECTANGLE = [commit], 45%, 0%, 10%, 100%, #000000
+CIRCLE = [commit], 30%, 30%, 40%, 40%, #000000
+CIRCLE = [commit], 35%, 35%, 30%, 30%, #FFFFFF
+TEXT = [commit], "commit", 5%, 5%, 10%, 90%, center, top, 270
+TEXT = [commit], "commit", 85%, 5%, 10%, 90%, center, bottom, 90
 
-TEXT = 1-4, "commit", 5%, 5%, 10%, 90%, center, top, 270
-TEXT = 1-4, "commit", 85%, 5%, 10%, 90%, center, bottom, 90
+RECTANGLE = [test], 45%, 0%, 10%, 100%, #FF0000
+CIRCLE = [test], 30%, 30%, 40%, 40%, #FF0000
+CIRCLE = [test], 35%, 35%, 30%, 30%, #228B22
+TEXT = [test], "test", 5%, 5%, 10%, 90%, center, top, 270
+TEXT = [test], "test", 85%, 5%, 10%, 90%, center, bottom, 90
+ICONS = [test], A, 40%, 40%, 20%, 20%, 20%, 20%, 0, PNA, center, center
 
-TEXT = 5-8, "test", 5%, 5%, 10%, 90%, center, top, 270
-TEXT = 5-8, "test", 85%, 5%, 10%, 90%, center, bottom, 90
+RECTANGLE = [release], 45%, 0%, 10%, 100%, #FF0000
+CIRCLE = [release], 30%, 30%, 40%, 40%, #FF0000
+CIRCLE = [release], 35%, 35%, 30%, 30%, #FFD700
+TEXT = [release], "release", 5%, 5%, 10%, 90%, center, top, 270
+TEXT = [release], "release", 85%, 5%, 10%, 90%, center, bottom, 90
+ICONS = [release], B, 40%, 40%, 20%, 20%, 20%, 20%, 0, PNA, center, center
 
-ICONS = 5-8, A, 40%, 40%, 20%, 20%, 20%, 20%, 0, PNA, center, center
+TEXT = [merge], "merge", 5%, 5%, 90%, 10%, center, top
+TEXT = [merge], "merge", 5%, 85%, 90%, 10%, center, top, 180
+LINE   = [merge], 0, 3, 6, 3, #FF0000, 0.5
+BEZIER = [merge], 0, 6, 3, 6, 3, 3, 100%, 3, #000000, 0.5, 1.5, , -18
 
-TEXT = 9-12, "release", 5%, 5%, 10%, 90%, center, top, 270
-TEXT = 9-12, "release", 85%, 5%, 10%, 90%, center, bottom, 90
+TEXT = [branch], "branch", 5%, 5%, 90%, 10%, center, top
+TEXT = [branch], "branch", 5%, 85%, 90%, 10%, center, top, 180
+BEZIER = [branch], 0, 3, 3, 3, 3, 6, 6, 6, #000000, 0.5, 1.5, , -18
+LINE   = [branch], 0, 3, 6, 3, #FF0000, 0.5, O
 
-ICONS = 9-12, B, 40%, 40%, 20%, 20%, 20%, 20%, 0, PNA, center, center
+TEXT = [dev], "dev", 5%, 85%, 90%, 10%, center, top, 0
+RECTANGLE = [dev], 45%, 0%, 10%, 50%, #000000
+CIRCLE = [dev], 30%, 30%, 40%, 40%, #000000
 
-TEXT = 13-16, "merge", 5%, 5%, 90%, 10%, center, top
-TEXT = 13-16, "merge", 5%, 85%, 90%, 10%, center, top, 180
-
-BEZIER = 13-16, 0, 6, 3, 6, 3, 3, 100%, 3, #444444, 0.5, 1.5, , -18
-LINE   = 13-16, 0, 3, 6, 3, #444444, 0.5
-
-TEXT = 17-20, "branch", 5%, 5%, 90%, 10%, center, top
-TEXT = 17-20, "branch", 5%, 85%, 90%, 10%, center, top, 180
-
-BEZIER = 17-20, 0, 3, 3, 3, 3, 6, 6, 6, #444444, 0.5, 1.5, , -18
-LINE   = 17-20, 0, 3, 6, 3, #444444, 0.5, O
+FONT = Alegreya Sans Medium, 18, BT, #FF0000
+TEXT = [prod], "prod", 5%, 85%, 90%, 10%, center, top, 0
+RECTANGLE = [prod], 45%, 0%, 10%, 50%, #FF0000
+CIRCLE = [prod], 30%, 30%, 40%, 40%, #FF0000

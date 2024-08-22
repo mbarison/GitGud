@@ -1,0 +1,6 @@
+PAGE = 21.6, 27.9, PORTRAIT, HV
+
+RECTANGLE = 1-56, 5%, 5%, 90%, 90%, #FF0000
+
+FONT = Alegreya Sans Medium, 56, BT, #FFFFFF
+TEXT = 1-56, "git gud", 5%, 5%, 90%, 90%, center, center, 60
