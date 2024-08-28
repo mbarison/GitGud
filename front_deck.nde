@@ -40,8 +40,8 @@ BEZIER = [merge], 0, 6, 3, 6, 3, 3, 100%, 3, #000000, 0.5, 1.5, , -18
 
 TEXT = [branch], "branch", 5%, 5%, 90%, 10%, center, top
 TEXT = [branch], "branch", 5%, 85%, 90%, 10%, center, top, 180
+LINE   = [branch], 0, 3, 6, 3, #FF0000, 0.5
 BEZIER = [branch], 0, 3, 3, 3, 3, 6, 6, 6, #000000, 0.5, 1.5, , -18
-LINE   = [branch], 0, 3, 6, 3, #FF0000, 0.5, O
 
 TEXT = [dev], "dev", 5%, 85%, 90%, 10%, center, top, 0
 RECTANGLE = [dev], 45%, 0%, 10%, 50%, #000000
@@ -51,3 +51,17 @@ FONT = Alegreya Sans Medium, 18, BT, #FF0000
 TEXT = [prod], "prod", 5%, 85%, 90%, 10%, center, top, 0
 RECTANGLE = [prod], 45%, 0%, 10%, 50%, #FF0000
 CIRCLE = [prod], 30%, 30%, 40%, 40%, #FF0000
+
+FONT = Alegreya Sans Medium, 32, BT, #000000
+TEXT = [commit], "C", 5%, 5%, 15%, 15%, center, top, 0
+TEXT = [commit], "C", 80%, 80%, 15%, 15%, center, top, 180
+TEXT = [merge], "M", 5%, 5%, 15%, 15%, center, top, 0
+TEXT = [merge], "M", 80%, 80%, 15%, 15%, center, top, 180
+
+FONT = Alegreya Sans Medium, 32, BT, #FF0000
+TEXT = [release], "R", 5%, 5%, 15%, 15%, center, top, 0
+TEXT = [release], "R", 80%, 80%, 15%, 15%, center, top, 180
+TEXT = [branch], "B", 5%, 5%, 15%, 15%, center, top, 0
+TEXT = [branch], "B", 80%, 80%, 15%, 15%, center, top, 180
+TEXT = [test], "T", 5%, 5%, 15%, 15%, center, top, 0
+TEXT = [test], "T", 80%, 80%, 15%, 15%, center, top, 180
