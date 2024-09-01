@@ -35,22 +35,28 @@ ICONS = [release], B, 40%, 40%, 20%, 20%, 20%, 20%, 0, PNA, center, center
 
 TEXT = [merge], "merge", 5%, 5%, 90%, 10%, center, top
 TEXT = [merge], "merge", 5%, 85%, 90%, 10%, center, top, 180
-LINE   = [merge], 0, 3, 6, 3, #FF0000, 0.5
-BEZIER = [merge], 0, 6, 3, 6, 3, 3, 100%, 3, #000000, 0.5, 1.5, , -18
+LINE   = [merge], 0, 2.5, 100%, 2.5, #FF0000, 0.5
+BEZIER = [merge], 0, 6.5, 2.5, 6.5, 2.5, 2.5, 95%, 2.5, #000000, 0.5, 1.5, , -18
 
 TEXT = [branch], "branch", 5%, 5%, 90%, 10%, center, top
 TEXT = [branch], "branch", 5%, 85%, 90%, 10%, center, top, 180
-LINE   = [branch], 0, 3, 6, 3, #FF0000, 0.5
-BEZIER = [branch], 0, 3, 3, 3, 3, 6, 6, 6, #000000, 0.5, 1.5, , -18
+LINE   = [branch], 0, 2.5, 100%, 2.5, #FF0000, 0.5
+BEZIER = [branch], 0, 2.5, 2.5, 2.5, 2.5, 6.5, 95%, 6.5, #000000, 0.5, 1.5, , -18
 
 TEXT = [dev], "dev", 5%, 85%, 90%, 10%, center, top, 0
 RECTANGLE = [dev], 45%, 0%, 10%, 50%, #000000
-CIRCLE = [dev], 30%, 30%, 40%, 40%, #000000
+CIRCLE = [dev], 20%, 20%, 60%, 60%, #000000
+CIRCLE = [dev], 30%, 30%, 40%, 40%, #AAAAAA
+IMAGE = 53, puggywise.png, 32%, 31%, 36%, 36%, 0, ANP
+IMAGE = 54, shoppug.png, 32%, 28%, 42%, 42%, 0, ANP
 
 FONT = Alegreya Sans Medium, 18, BT, #FF0000
 TEXT = [prod], "prod", 5%, 85%, 90%, 10%, center, top, 0
 RECTANGLE = [prod], 45%, 0%, 10%, 50%, #FF0000
-CIRCLE = [prod], 30%, 30%, 40%, 40%, #FF0000
+CIRCLE = [prod], 20%, 20%, 60%, 60%, #FF0000
+CIRCLE = [prod], 30%, 30%, 40%, 40%, #AAAAAA
+IMAGE = 55, puggywise.png, 32%, 31%, 36%, 36%, 0, ANP
+IMAGE = 56, shoppug.png, 32%, 28%, 42%, 42%, 0, ANP
 
 FONT = Alegreya Sans Medium, 32, BT, #000000
 TEXT = [commit], "C", 5%, 5%, 15%, 15%, center, top, 0
