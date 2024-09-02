@@ -5,13 +5,13 @@ FONT = Alegreya Sans Medium, 18, BT, #000000
 ICON = , A, check.png
 ICON = , B, star.png
 
-[commit] = 1-32
-[test] = 33-37
-[release] = 38-42
-[merge] = 43-47
-[branch] = 48-52
-[dev] = 53-54
-[prod] = 55-56
+[commit] = 1-30
+[test] = 31-35
+[release] = 36-40
+[merge] = 41-45
+[branch] = 46-50
+[dev] = 51-52
+[prod] = 53-54
 
 RECTANGLE = [commit], 45%, 0%, 10%, 100%, #000000
 CIRCLE = [commit], 30%, 30%, 40%, 40%, #000000
@@ -47,16 +47,16 @@ TEXT = [dev], "dev", 5%, 85%, 90%, 10%, center, top, 0
 RECTANGLE = [dev], 45%, 0%, 10%, 50%, #000000
 CIRCLE = [dev], 20%, 20%, 60%, 60%, #000000
 CIRCLE = [dev], 30%, 30%, 40%, 40%, #AAAAAA
-IMAGE = 53, puggywise.png, 32%, 31%, 36%, 36%, 0, ANP
-IMAGE = 54, shoppug.png, 32%, 28%, 42%, 42%, 0, ANP
+IMAGE = 51, puggywise.png, 32%, 31%, 36%, 36%, 0, ANP
+IMAGE = 52, shoppug.png, 32%, 28%, 42%, 42%, 0, ANP
 
 FONT = Alegreya Sans Medium, 18, BT, #FF0000
 TEXT = [prod], "prod", 5%, 85%, 90%, 10%, center, top, 0
 RECTANGLE = [prod], 45%, 0%, 10%, 50%, #FF0000
 CIRCLE = [prod], 20%, 20%, 60%, 60%, #FF0000
 CIRCLE = [prod], 30%, 30%, 40%, 40%, #AAAAAA
-IMAGE = 55, puggywise.png, 32%, 31%, 36%, 36%, 0, ANP
-IMAGE = 56, shoppug.png, 32%, 28%, 42%, 42%, 0, ANP
+IMAGE = 53, puggywise.png, 32%, 31%, 36%, 36%, 0, ANP
+IMAGE = 54, shoppug.png, 32%, 28%, 42%, 42%, 0, ANP
 
 FONT = Alegreya Sans Medium, 32, BT, #000000
 TEXT = [commit], "C", 5%, 5%, 15%, 15%, center, top, 0
