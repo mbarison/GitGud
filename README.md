@@ -57,7 +57,7 @@ The player draws a card either from the top of the draw deck or from the top of 
 - Commit cards earn points at the end of the game, so make sure to play as many as you can.
 
 > Example: how to play a `commit` card.
-> 
+>
 > <img src="figures/fig2.png" width="150" alt="How to play a commit card"/>
 
 ### Merge card
@@ -70,7 +70,7 @@ The player draws a card either from the top of the draw deck or from the top of 
 - The `merge` card makes the black `dev` branch inactive and the red `prod` branch active.
 
 > Example: how to play a `merge` card.
-> 
+>
 > <img src="figures/fig3.png" width="250" alt="How to play a merge card"/>
 
 ### Test card
@@ -83,7 +83,7 @@ The player draws a card either from the top of the draw deck or from the top of 
 - The `test` cards together with the `release` cards are necessary to score points (see Scoring section).
 
 > Example: how to play a `test` card.
-> 
+>
 > <img src="figures/fig4.png" width="250" alt="How to play a test card"/>
 
 ### Release card
@@ -94,8 +94,8 @@ The player draws a card either from the top of the draw deck or from the top of 
 - When you play a `release` card, you place it above the last played card of the `prod` branch.
 - The `release` cards together with the `test` cards are necessary to score points (see Scoring section).
 
-> Example: how to play a `release` card. _Note: although this move is allowed, it won't score you points. You need to play a test card before you play a release card!_
-> 
+> Example: how to play a `release` card. *Note: although this move is allowed, it won't score you points. You need to play a test card before you play a release card!*
+>
 > <img src="figures/fig5.png" width="250" alt="How to play a release card"/>
 
 ### Branch card
@@ -107,7 +107,7 @@ The player draws a card either from the top of the draw deck or from the top of 
 - The `branch` card makes the red `prod` branch inactive and the black `dev` branch active.
 
 > Example: how to play a `branch` card.
-> 
+>
 > <img src="figures/fig6.png" width="250" alt="How to play a branch card"/>
 
 ## Game end
@@ -115,6 +115,32 @@ The player draws a card either from the top of the draw deck or from the top of 
 The game ends when there are no cards left in the draw deck and no cards left in the players' hands.
 
 ## Scoring
+
+To score the game, look at all the `release` cards played on your repository. For each release card, you search **down** until you find the beginning of a branch, i.e. either a `branch` card or the starter repository card, whichever comes first. You count all the `commit` cards between the beginning of the branch and the `release` card and then:
+
+- If between the beginning of the branch and the `release` card you find one `test` card, you score a number of points equal to the number of `commit` cards on this branch.
+- If between the beginning of the branch and the `release` card you find two `test` cards, you score a number of points equal to the number of `commit` cards on this branch, plus three bonus points.
+- If between the beginning of the branch and the `release` card you find three or more `test` cards, you score a number of points equal to the number of `commit` cards on this branch, plus five bonus points.
+- If between the beginning of the branch and the `release` card you find no `test` cards, you score a number of **negative** points equal to the number of `commit` cards on this branch.
+- If a branch has no `release` card, you score zero points.
+
+> Example 1: Between the beginning of the branch and the release, we find one `commit` card and one `test` card. This release scores **1 point**.
+>
+> <img src="figures/fig7.png" width="250" alt="Scoring points 1"/>
+
+&nbsp;
+
+> Example 2: Between the beginning of the branch and the release, we find two `commit` cards and zero `test` cards. This release scores **-2 points**.
+>
+> <img src="figures/fig8.png" width="250" alt="Scoring points 2"/>
+
+&nbsp;
+
+> Example 3: This branch is closed and then reopened without a `release`, so it scores **0 points**.
+>
+> <img src="figures/fig9.png" width="250" alt="Scoring points 3"/>
+
+You add the points for each release, and if you are playing competively, the team with the highest score wins! If you are playing collaboratively, write down your score and try to beat it next time!
 
 ## Epilogue
 
