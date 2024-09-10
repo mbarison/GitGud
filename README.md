@@ -18,8 +18,7 @@ As [Git](https://git-scm.com/) is a collaborative tool, the game is mostly colla
 
 Each team receives two *repository cards*: one red `prod` card and one black `dev` card. Put these cards face up in front of one of the two players of the team, with the red `prod` card to the left of the black `prod` card, like this:
 
-<img src="figures/front_deck_55.png" width="200" alt="Production branch card"/>
-<img src="figures/front_deck_53.png" width="200" alt="Development branch card"/>
+<img src="figures/fig1.png" width="400" alt="Starting repository setup"/>
 
 If there's only one team in the game, place aside the remaining two repository cards.
 
@@ -57,39 +56,59 @@ The player draws a card either from the top of the draw deck or from the top of 
 - When you play a `commit` card, you place it above the last played card of the `dev` branch.
 - Commit cards earn points at the end of the game, so make sure to play as many as you can.
 
+> Example: how to play a `commit` card.
+> 
+> <img src="figures/fig2.png" width="150" alt="How to play a commit card"/>
+
 ### Merge card
 
-<img src="figures/front_deck_43.png" width="200" alt="Commit card"/>
+<img src="figures/front_deck_43.png" width="200" alt="Merge card"/>
 
 - The `merge` card can only be played on the black `dev` branch, while this branch is active.
 - Moreover, the `merge` card can only be played if it's preceded by at least one `commit` card. This means that the `merge` card cannot be played as the first card on the `dev` branch, nor can it be played after a `branch` card.
 - When you play a `merge` card, you rotate it 90 degrees and place it above the last played card of the `dev` branch, straddling the two branches.
 - The `merge` card makes the black `dev` branch inactive and the red `prod` branch active.
 
+> Example: how to play a `merge` card.
+> 
+> <img src="figures/fig3.png" width="250" alt="How to play a merge card"/>
+
 ### Test card
 
-<img src="figures/front_deck_33.png" width="200" alt="Commit card"/>
+<img src="figures/front_deck_33.png" width="200" alt="Test card"/>
 
 - The `test` card can only be played on the red `prod` branch, while this branch is active.
 - The `test` card can only be played after a `merge` card or another `test` card. It cannot be played after a `release` card.
 - When you play a `test` card, you place it above the last played card of the `prod` branch.
 - The `test` cards together with the `release` cards are necessary to score points (see Scoring section).
 
+> Example: how to play a `test` card.
+> 
+> <img src="figures/fig4.png" width="250" alt="How to play a test card"/>
+
 ### Release card
 
-<img src="figures/front_deck_38.png" width="200" alt="Commit card"/>
+<img src="figures/front_deck_38.png" width="200" alt="Release card"/>
 
 - The `release` card can only be played on the red `prod` branch, while this branch is active. There are no further restrictions.
 - When you play a `release` card, you place it above the last played card of the `prod` branch.
 - The `release` cards together with the `test` cards are necessary to score points (see Scoring section).
 
+> Example: how to play a `release` card. _Note: although this move is allowed, it won't score you points. You need to play a test card before you play a release card!_
+> 
+> <img src="figures/fig5.png" width="250" alt="How to play a release card"/>
+
 ### Branch card
 
-<img src="figures/front_deck_48.png" width="200" alt="Commit card"/>
+<img src="figures/front_deck_48.png" width="200" alt="Branch card"/>
 
 - The `branch` card can only be played on the red `prod` branch, while this branch is active. There are no further restrictions.
 - When you play a `branch` card, you rotate it 90 degrees and place it above the last played card of the `prod` branch, straddling the two branches.
 - The `branch` card makes the red `prod` branch inactive and the black `dev` branch active.
+
+> Example: how to play a `branch` card.
+> 
+> <img src="figures/fig6.png" width="250" alt="How to play a branch card"/>
 
 ## Game end
 
