@@ -5,7 +5,8 @@ FONT = Alegreya Sans Medium, 18, BT, #000000
 ICON = , A, check.png
 ICON = , B, star.png
 
-[commit] = 1-30
+[commit] = 1-27
+[fail] = 28-30
 [test] = 31-35
 [release] = 36-40
 [merge] = 41-45
@@ -71,3 +72,8 @@ TEXT = [branch], "B", 5%, 5%, 15%, 15%, center, top, 0
 TEXT = [branch], "B", 80%, 80%, 15%, 15%, center, top, 180
 TEXT = [test], "T", 5%, 5%, 15%, 15%, center, top, 0
 TEXT = [test], "T", 80%, 80%, 15%, 15%, center, top, 180
+
+FONT = Armalite Rifle, 24, BT, #FF0000
+IMAGE = [fail], brains.png, 10%, 10%, 80%, 80%, 0, ANP
+TEXT =[fail], "FAIL", 5%, 5%, 90%, 20%, center, top, 0
+TEXT =[fail], "FAILLITE", 5%, 75%, 90%, 20%, center, bottom, 0
