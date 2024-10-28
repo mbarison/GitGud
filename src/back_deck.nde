@@ -1,8 +1,30 @@
 PAGE = 21.6, 27.9, PORTRAIT, HV
 
-RECTANGLE = 1-9, 5%, 5%, 90%, 90%, #FF0000
+RECTANGLE = 1-27, 5%, 5%, 90%, 90%, #FF0000
 
 FONT = Alegreya Sans Medium, 56, BT, #FFFFFF
 TEXT = 1-9, "git gud", 5%, 5%, 90%, 90%, center, center, 60
-IMAGE = 1-9, pug.png, 65%, 3%, 25%, 25%, 0, NP
-IMAGE = 1-9, pug.png, 10%, 72%, 25%, 25%, 180, NP
+
+; second page, for test
+RECTANGLE = 10-15, 5%, 5%, 90%, 90%, #0000FF
+TEXT = 10-15, "TEST", 5%, 5%, 90%, 90%, center, center, 60
+
+RECTANGLE = 16, 5%, 5%, 90%, 90%, #009900
+TEXT = 16, "RELEASE", 5%, 5%, 90%, 90%, center, center, 60
+
+RECTANGLE = 17-18, 5%, 5%, 90%, 90%, #0000FF
+TEXT = 17-18, "TEST", 5%, 5%, 90%, 90%, center, center, 60
+
+; third page, for release
+RECTANGLE = 19-21, 5%, 5%, 90%, 90%, #009900
+TEXT = 19-21, "RELEASE", 5%, 5%, 90%, 90%, center, center, 60
+
+TEXT = 22-23, "git gud", 5%, 5%, 90%, 90%, center, center, 60
+
+RECTANGLE = 24, 5%, 5%, 90%, 90%, #009900
+TEXT = 24, "RELEASE", 5%, 5%, 90%, 90%, center, center, 60
+
+TEXT = 25-27, "git gud", 5%, 5%, 90%, 90%, center, center, 60
+
+IMAGE = 1-27, pug.png, 65%, 3%, 25%, 25%, 0, NP
+IMAGE = 1-27, pug.png, 10%, 72%, 25%, 25%, 180, NP

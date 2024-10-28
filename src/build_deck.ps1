@@ -1,0 +1,1 @@
+pdftk A=front_deck.pdf B=back_deck.pdf cat A1 B1 A2 B1 A3 B1 A4 B2 A5 B3 A6 B1 output ..\deck\full_deck.pdf

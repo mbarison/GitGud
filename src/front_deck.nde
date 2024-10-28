@@ -76,4 +76,4 @@ TEXT = [test], "T", 80%, 80%, 15%, 15%, center, top, 180
 FONT = Armalite Rifle, 32, BT, #FF0000
 IMAGE = [fail], brains.png, 10%, 10%, 80%, 80%, 0, ANP
 TEXT =[fail], "FAIL", 5%, 5%, 90%, 20%, center, top, 0
-TEXT =[fail], "FAILLITE", 5%, 75%, 90%, 20%, center, bottom, 0
+TEXT =[fail], "ÉCHEC", 5%, 75%, 90%, 20%, center, bottom, 0
